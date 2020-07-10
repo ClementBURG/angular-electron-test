@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:electron": "ng build --base-href ./ && electron ."
+    "start:electron": "ng build --base-href ./ && electron .",
+    "build:electron:win:64": "electron-packager ./ angular-electron-test --platform=win32 --arch=x64"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "electron": "^9.1.0",
+    "electron-packager": "^15.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
